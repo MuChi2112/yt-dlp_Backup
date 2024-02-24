@@ -23,12 +23,14 @@ Ensure `ffmpeg` is installed and accessible from your system's PATH. You can dow
 
 ![img](https://github.com/MuChi2112/yt-dlp_Backup/blob/main/example_pic/example_pic.png?raw=true)
 
-[URL](https://vodcache049.dmc.nico/hlsvod/ht2_nicovideo/nicovideo-sm17073592_213b3b62b1d965e5e5149cb3dc07e2ce25cc633168cf97813cb0eaba2e18ecbb/1/ts/9.ts?ht2_nicovideo=6-ZLdTYsz9rJ_1708795961585.ctiz2hlt1h_s9dfej_2hxsm4chob4sx) been highlight is the URL of the .ts file. 
+URL of the .ts file been highlight is the URL of the .ts file. 
+
+note: URL of .ts file change every time, please run the code with website and F12 open.
 
 
 2. **Configuration**: Before running the script, you need to set up a few variables:
    - `save_path`: The directory where the `.ts` files will be downloaded and processed. This script will create the directory if it doesn't exist.
-   - `start_file` and `end_file`: The range of file indexes to download. The script will download files starting from `start_file` to `end_file`, inclusive.
+   - `start_file` and `end_file`: The range of file indexes to download. The script will download files starting from `start_file` to `end_file`, inclusive. Usually to download whole video, `start_file` would be 1. To get `end_file`, will have to go to the end of the video and check which .ts file is the last of it.
    - `base_url_front` and `base_url_end`: Parts of the URL that will be concatenated with the file index to form the full URL for downloading. The full URL is constructed as `base_url_front + str(i) + base_url_end` where `i` is the file index.
    
    - `video_name`: The desired name for the final MP4 video file.
